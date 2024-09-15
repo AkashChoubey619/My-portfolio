@@ -3,6 +3,10 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.jpeg";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +15,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "LinkedIn website",
+      description: "Create a account and start posing,commenting & hit like to the post's",
       imgUrl: projImg1,
+      link:'https://linkedin-clone-lovat-one.vercel.app/',
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "ClearTrip",
+      description: "Start booking you ticket for Flights,buses and cabs",
       imgUrl: projImg2,
+      link:'https://clear-trip-clone-project.vercel.app/',
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pokemon cards",
+      description: "Check your favorite pokemon stats..",
       imgUrl: projImg3,
+      link:'https://pokemon-card-seven.vercel.app/',
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Movies deck",
+      description: "Upcoming project",
+      imgUrl: projImg4,
+      link:'#',
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Music Player",
+      description: "Upcoming project",
+      imgUrl: projImg6,
+      link:'#',
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Code editor",
+      description: "Upcoming project",
+      imgUrl: projImg5,
+      link:'#',
     },
   ];
 
@@ -80,10 +90,16 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>
+                      Exciting new developments are on the way! This section will soon feature cutting-edge
+                       projects currently in the planning or early stages of development. [Tab 2]
+                      </p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>
+                      Exciting new developments are on the way! This section will soon feature cutting-edge
+                      projects currently in the planning or early stages of development. [Tab 3]
+                      </p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
