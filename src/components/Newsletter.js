@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
-export const Newsletter = ({ status, message, onValidated }) => {
+export const Newsletter = ({ setStatus,status, message, onValidated }) => {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
@@ -15,9 +15,12 @@ export const Newsletter = ({ status, message, onValidated }) => {
     onValidated({
       EMAIL: email
     })
+    setTimeout(()=>setStatus('sending'),0)
+    setTimeout(()=>setStatus('success'),1000)
   }
 
   const clearFields = () => {
+  
     setEmail('');
   }
 
